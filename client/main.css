@@ -1,0 +1,155 @@
+body {
+  background-color: rgb(137, 186, 255);
+  color: #000000;
+  font-family: monospace;
+}
+
+.header{
+  padding-top: 0px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  font-size: 80px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+
+}
+
+nav {
+display: inline;
+padding-top: 50px;
+font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.center {
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 2px rgba(0,0,0, .3);
+  background-color: white;
+  transform-style:preserve-3d;
+  height: 200px;
+  transition: 150ms;
+  width: 400px;
+  cursor:pointer;
+  transform: perspective(1000px)rotateY(var(--rotate-y,0));
+}
+
+.card.flip{
+  --rotate-y:180deg;
+}
+
+.card .front,
+.card .back {
+position: absolute;
+padding: 1rem;
+backface-visibility: hidden;
+
+}
+
+.card .back {
+  transform:rotateY(180deg);
+}
+
+.flashcard {
+  padding-top:50px;
+  padding-bottom: 10px;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+
+.form {
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.formText {
+  font-size: 15px;
+  text-align: center;
+}
+
+.finishButton {
+  padding-bottom: 250px;
+  text-align: center;
+}
+
+.button {
+font-family: monospace;
+display: inline-block;
+margin:10px;
+padding: 10px;
+font-size: 15px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #080000;
+background-color: #3da141;
+border: none;
+border-radius: 15px;
+box-shadow: 0px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0px #666;
+  transform: translateY(4px);
+}
+body {
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
