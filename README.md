@@ -8,7 +8,7 @@
 #Flashcard flipping
 #2 routes
 
-#Current features that need improvement
+#Current features that need improvement:
 #User input
 #CSS
 #Media queries
